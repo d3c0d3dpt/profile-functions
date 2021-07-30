@@ -33,10 +33,10 @@ jobs:
         working-directory: functions
 
       - name: Install Firebase CLI
-        run: npm i firebase
+        run: npm i -g firebase
 
       - name: Deploy
-        run: ./node_modules/.bin/firebase deploy
+        run: firebase deploy
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
