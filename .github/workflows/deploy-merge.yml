@@ -32,16 +32,9 @@ jobs:
         run: npm i
         working-directory: functions
 
-      - name: Install Firebase CLI
-        run: npm i -g firebase
-
       - name: Deploy
-        run: firebase deploy
+        uses: jonahsnider/firebase-action@1.0.7
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-
-#      - name: Deploy
-#        uses: doonstore/firebase-deploy@v1
-#        env:
-#          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-#          FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
+        with:
+          args: deploy
