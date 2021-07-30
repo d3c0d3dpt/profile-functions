@@ -1,18 +1,12 @@
 # Nuxt.js UI for [aferreira.xyz](https://aferreira.xyz/)
 
-## Build Setup
+## Deployment
 
 ```bash
-# install dependencies
-$ npm install
+# install the firebase CLI globally
+$ npm install -g firebase
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# deploy
+$ firebase deploy
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
