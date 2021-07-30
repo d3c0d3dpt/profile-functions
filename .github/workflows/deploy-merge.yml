@@ -31,8 +31,14 @@ jobs:
       - name: Install dependencies
         run: npm i
 
+      - name: Install dependencies
+        run: npm i firebase
+
       - name: Deploy
-        uses: doonstore/firebase-deploy@v1
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
+        run: firebase deploy
+
+#      - name: Deploy
+#        uses: doonstore/firebase-deploy@v1
+#        env:
+#          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+#          FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
