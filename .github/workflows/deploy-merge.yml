@@ -32,11 +32,13 @@ jobs:
         run: npm i
         working-directory: functions
 
-      - name: Install dependencies
+      - name: Install Firebase CLI
         run: npm i firebase
 
       - name: Deploy
-        run: firebase deploy
+        run: ./node_modules/.bin/firebase deploy
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
 #      - name: Deploy
 #        uses: doonstore/firebase-deploy@v1
