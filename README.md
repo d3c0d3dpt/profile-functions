@@ -1,4 +1,4 @@
-# Nuxt.js UI for [aferreira.xyz](https://aferreira.xyz/)
+# Firebase Functions for [aferreira.xyz](https://aferreira.xyz/)
 
 ## Deployment
 
