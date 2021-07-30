@@ -31,6 +31,8 @@ jobs:
       - name: Install dependencies
         run: npm i
         working-directory: functions
+        env:
+          NODE_ENV: development
 
       - name: Deploy
         uses: jonahsnider/firebase-action@1.0.7
