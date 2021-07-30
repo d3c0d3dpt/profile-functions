@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+defaults:
+  run:
+    working-directory: functions
+
 jobs:
   build_and_preview:
     name: Build and Deploy
