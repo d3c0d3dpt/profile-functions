@@ -1,0 +1,12 @@
+{
+  "smtp": {
+    "auth": {
+      "pass": "CEbk xu2n y4Sd",
+      "user": "me@aferreira.xyz",
+      "type": "login"
+    },
+    "port": "465",
+    "secure": "true",
+    "host": "smtp.zoho.com"
+  }
+}
